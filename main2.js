@@ -55,4 +55,10 @@ for (const data of removeData) {
     data.remove();
 }
 
+// 2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. Recuerda que no solo puedes insertar elementos con .appendChild.
 
+
+
+
+
+// 2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here
