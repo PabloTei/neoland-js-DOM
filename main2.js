@@ -28,3 +28,8 @@ document.body.appendChild(newPtres);
 newPtres.insertAdjacentText("afterbegin", "Soy Dinámico");
 
 
+// 2.5 Inserta en el h2 con la clase .fn-insert-here el texto 'Wubba Lubba dub dub'.
+
+const titulo = document.querySelector(".fn-insert-here");
+titulo.insertAdjacentHTML("afterbegin", "Wubba Lubba dub dub");
+
