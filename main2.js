@@ -11,7 +11,7 @@ document.body.appendChild(newDivContainP);
 const newP = document.createElement("p");
 newDivContainP.appendChild(newP);
 
-// 2.3 Inserta dinamicamente en un html un div que contenga una p con javascript.
+// 2.3 Inserta dinamicamente en un html un div que contenga 6 p utilizando un loop con javascript.
 
 const newDiv2 = document.createElement("div"); //creo elemento <div>
 document.body.appendChild(newDiv2); //añado elemento div al DOM
@@ -33,3 +33,16 @@ newPtres.insertAdjacentText("afterbegin", "Soy Dinámico");
 const titulo = document.querySelector(".fn-insert-here");
 titulo.insertAdjacentHTML("afterbegin", "Wubba Lubba dub dub");
 
+
+// 2.6 Basandote en el siguiente array crea una lista ul > li con los textos del array.
+
+const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
+
+const listaDesordenada = document.createElement("ul");
+document.body.appendChild(listaDesordenada);
+
+for (const app of apps) {
+    const lista = document.createElement("li");
+    listaDesordenada.appendChild(lista);
+    lista.insertAdjacentHTML("afterbegin", app);
+}
