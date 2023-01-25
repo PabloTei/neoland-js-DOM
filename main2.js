@@ -46,3 +46,13 @@ for (const app of apps) {
     listaDesordenada.appendChild(lista);
     lista.insertAdjacentHTML("afterbegin", app);
 }
+
+
+// 2.7 Elimina todos los nodos que tengan la clase .fn-remove-me
+
+const removeData = document.querySelectorAll(".fn-remove-me");
+for (const data of removeData) {
+    data.remove();
+}
+
+
