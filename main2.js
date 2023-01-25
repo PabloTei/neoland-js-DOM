@@ -23,4 +23,8 @@ for (let i = 0; i < 6; i++) {
 
 // 2.4 Inserta dinamicamente con javascript en un html una p con el texto 'Soy dinámico!'.
 
+const newPtres = document.createElement("p");
+document.body.appendChild(newPtres);
+newPtres.insertAdjacentText("afterbegin", "Soy Dinámico");
+
 
