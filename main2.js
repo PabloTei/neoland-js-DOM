@@ -60,7 +60,7 @@ for (const data of removeData) {
 const parrafo = document.createElement("p"); // Creamos parrafo
 parrafo.insertAdjacentHTML("beforebegin", "Voy en medio!"); // Insertamos texto
 const divUno = document.querySelector(".fn-insert-here") // guardamos en memoria donde queremos ubicar al parrafo
-divUno.insertAdjacentHTML(parrafo); // añadimos al hijo al padre que queremos
+divUno.appendChild(parrafo); // añadimos al hijo al padre que queremos
 
 
 // 2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here
