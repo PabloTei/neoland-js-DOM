@@ -33,6 +33,7 @@ for (const iterator of showCharacters) {
 // 1.6 Usa querySelector para mostrar por consola el 3 personaje con el atributo data-function="testMe".
 
 const showThirdCharacter = document.querySelectorAll('[data-function= "testMe"]');
+// console.log(showCharacters[2].textContent); Manera corta de hacerlo
 let i = 0;
 for (const iterator of showThirdCharacter) {
     i++;
@@ -41,12 +42,6 @@ for (const iterator of showThirdCharacter) {
     }
 }
 
-
-/*for (const iterator of showThirdCharacter) {
-    if (iterator.textContent === "Rick") {
-        console.log(iterator.textContent)
-    }
-}*/
 
 
 
