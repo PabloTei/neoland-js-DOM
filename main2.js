@@ -57,11 +57,12 @@ for (const data of removeData) {
 
 // 2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. Recuerda que no solo puedes insertar elementos con .appendChild.
 
-const parrafo = document.createElement("p"); // Creamos parrafo
-parrafo.insertAdjacentHTML("beforebegin", "Voy en medio!"); // Insertamos texto
-const divUno = document.querySelector(".fn-insert-here") // guardamos en memoria donde queremos ubicar al parrafo
-divUno.appendChild(parrafo); // añadimos al hijo al padre que queremos
+const divUno = document.querySelector("div")
+divUno.insertAdjacentHTML("afterbegin", "<p>Voy en medio!</p>");
 
 
 // 2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here
+
+const divDos = document.getElementsByClassName("fn-insert-here")
+divUno.insertAdjacentHTML("beforeend", "<p>Voy dentro!</p>");
 
